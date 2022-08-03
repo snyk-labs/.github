@@ -3,12 +3,14 @@ description: Request a new feature or enhancement
 labels: ["enhancement"]
 title: "[FEAT]: "
 body:
-  - type: markdown
+  - type: checkboxes
+    id: new-bug
     attributes:
-      value: |
-        Please make sure this feature request hasn't been already submitted by someone by looking through other open/closed issues
-    validations:
-      required: true
+      label: Is there an existing feature request for this?
+      description: Please search to see if a relevant feature request already exists.
+      options:
+      - label: I have searched the existing feature requests
+        required: true
 
   - type: textarea
     id: description
